@@ -1,15 +1,41 @@
-body {
-  width: 200px;
-  height: 140px;
-  font-size: 14px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-h4 {
-  margin: 0;
+body {
+  width: 240px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  background-color: #fffffe
+  color: #272343
+}
+
+.dateContainer,
+.timeContainer,
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titleContainer {
+  margin: 5px 0 10px 0;
 }
 
 #time {
   margin: 10px 0;
+}
+
+#date,
+#time {
+  margin-left: 5px;
 }
 
 .ipContainer {
@@ -20,16 +46,33 @@ h4 {
 }
 
 #ip {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 #location {
   font-size: 10px;
   opacity: 0.7;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 #copy {
-  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
   cursor: pointer;
+  padding: 8px 10px;
+  background-color: white;
+  border-radius: 0;
+  border: 1px solid #d3d3d3;
+}
+
+#copy span {
+  margin-left: 5px;
+}
+
+#copy:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
 }

@@ -14,7 +14,7 @@ const updateDate = () => {
     month: "long",
     year: "numeric",
   });
-  dateElement.textContent = `📆  ${currentDate}`;
+  dateElement.textContent = `${currentDate}`;
 };
 
 const updateIP = async () => {
@@ -56,7 +56,7 @@ const updateTimeElements = () => {
     { minimumIntegerDigits: 2 }
   )}:${seconds.toLocaleString("en-US", { minimumIntegerDigits: 2 })} ${ampm}`;
 
-  timeElement.textContent = `🕑  ${currentTimeFormatted}`;
+  timeElement.textContent = `${currentTimeFormatted}`;
 };
 
 updateIP();

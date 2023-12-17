@@ -29,6 +29,8 @@ module.exports = {
       patterns: [
         { from: "./popup.html", to: "popup.html" },
         { from: "./popup.css", to: "popup.css" },
+        { from: "./manifest.json", to: "manifest.json" },
+        { from: "./assets", to: "assets" },
       ],
     }),
   ],

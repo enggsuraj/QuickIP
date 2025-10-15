@@ -4,32 +4,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QuickIP - Blogtheorem</title>
+  <title>QuickIP</title>
   <link rel="stylesheet" href="popup.css" />
   <link rel="icon" type="image/x-icon" href="./assets/QuickIP.png">
 </head>
 
 <body>
-  <div class="titleContainer">
-    QuickIP
-  </div>
-  <div class="dateContainer">
-    <img width="24" height="24" src="https://img.icons8.com/badges/48/15.png" alt="15" />
-    <div id="date"></div>
-  </div>
-  <div class="timeContainer">
-    <img width="24" height="24" src="https://img.icons8.com/badges/48/time-span.png" alt="time-span" />
-    <div id="time"></div>
-  </div>
-  <div id="location"></div>
-  <div class="ipContainer">
-    <div id="ip"></div>
-    <button id="copy">
-      <img width="14" height="14" src="https://img.icons8.com/parakeet-line/48/copy.png" alt="copy" />
-      <span>copy</span>
-    </button>
-  </div>
+  <header class="titleContainer">
+    <h1>QuickIP</h1>
+  </header>
+
+  <main>
+    <section class="infoContainer">
+      <div class="dateContainer">
+        <img width="24" height="24" src="https://img.icons8.com/badges/48/15.png" alt="Calendar icon" />
+        <div id="date"></div>
+      </div>
+      <div class="timeContainer">
+        <img width="24" height="24" src="https://img.icons8.com/badges/48/time-span.png" alt="Clock icon" />
+        <div id="time"></div>
+      </div>
+    </section>
+
+    <div class="locationContainer">
+      <div id="location"></div>
+    </div>
+
+    <div class="ipContainer">
+      <div id="ip"></div>
+      <button id="copy" aria-label="Copy IP address">
+        <img width="14" height="14" src="https://img.icons8.com/parakeet-line/48/copy.png" alt="" />
+        <span>copy</span>
+      </button>
+    </div>
+  </main>
+
+  <script src="popup.js"></script>
 </body>
-<script src="popup.js"></script>
 
 </html>
